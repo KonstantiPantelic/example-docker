@@ -13,3 +13,4 @@ jobs:
         uses: ./  # Uses the action in the root directory
         with:
           who-to-greet: 'Mona the Octocat'
+          
