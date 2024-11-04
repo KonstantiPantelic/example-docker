@@ -1,0 +1,15 @@
+name: Test Hello World Action
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Run Hello World Action
+        uses: ./  # Uses the action in the root directory
+        with:
+          who-to-greet: 'Mona the Octocat'
